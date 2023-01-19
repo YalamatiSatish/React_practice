@@ -34,7 +34,7 @@ function App() {
     ]
   )
   function updateEmployee(id, newName, newRole){
-    console.log("update from the apppp")
+    console.log("update employee inside of app.js, the apppp")
       const updateEmployees = EmployeeDetails.map((employee)=>{
         if(id === employee.id){
           return{...employee, name:newName, Role:newRole}
