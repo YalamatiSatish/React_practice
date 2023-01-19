@@ -2,11 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
 const EditEmployee = ({Details,updateEmployee}) => {
-  console.log('Details',Details)
-  console.log('updateEmployee',updateEmployee)
 
-
-  
       const [name, setName] = useState(Details?.name)
       const [role, setRole] = useState(Details?.Role)
 
@@ -36,8 +32,6 @@ const EditEmployee = ({Details,updateEmployee}) => {
                   onSubmit={(e)=>{
                     e.preventDefault();
                     handleClose();
-                    console.log("Update from edit employee")
-                    console.log(Details.id, name, role )
                     updateEmployee(Details?.id, name, role)
                   }} 
                   >

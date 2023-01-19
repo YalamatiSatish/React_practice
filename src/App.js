@@ -34,7 +34,7 @@ function App() {
     ]
   )
   function updateEmployee(id, newName, newRole){
-    console.log("update employee inside of app.js, the apppp")
+
       const updateEmployees = EmployeeDetails.map((employee)=>{
         if(id === employee.id){
           return{...employee, name:newName, Role:newRole}
@@ -44,7 +44,7 @@ function App() {
       setEmployeeDetails(updateEmployees)
   }
   return (
-    <div className="bg-blue-400 h-screen p-1 ">
+    <div className="bg-blue-400  p-1 ">
       <div className='flex flex-wrap justify-center '> 
       { 
       EmployeeDetails?.map((item, employeeid) => {
